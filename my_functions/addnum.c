@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /** main - This program would add 2 number by calling the add function.
  * Return:0
