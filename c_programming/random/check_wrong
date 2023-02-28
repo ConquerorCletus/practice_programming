@@ -1,0 +1,24 @@
+int mul(int a, int b)
+{
+	return (a * b);
+}
+#include "main.h"
+#include <stdio.h>
+/**
+ * main - This program test mul function
+ * Return: 0
+ */
+int main(void)
+{
+	int mul;
+
+	mul(8, 9);
+	printf("%d\n", mul);
+	return (0);
+}
+#ifndef MAIN_H
+#define MAIN_H
+
+int mul(int a, int b);
+
+#endif
