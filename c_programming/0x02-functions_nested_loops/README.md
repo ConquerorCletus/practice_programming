@@ -15,3 +15,6 @@
 so i would be performing all my task related to 0x02-C functions and nested loops as directed by alx.
 
 
+**_main.c ** the main.c files test each functions
+
+**check_<function_name>** compares the function and codes together in a file for error detection and better understanding.
