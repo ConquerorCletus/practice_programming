@@ -1,0 +1,25 @@
+array : contiguous memory of the same data type grouped together.
+
+int a,b,c;
+a = 1;
+b= 2;
+"#
+int a[80]={};
+
+pointers are variables that leads to the address of data type.
+
+address - hexadecimal.0x07822c
+
+int a = 4;
+int* ptr;
+ /* a space called which integer a = 4 but 0x07s*/ 
+
+ ptr = &a;
+ ptr = 6
+
+strcat
+strcpy
+strcmp
+
+
+
