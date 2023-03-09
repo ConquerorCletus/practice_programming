@@ -1,0 +1,66 @@
+int *ptr
+int a = 0;
+
+ptr = a 
+
+pointer to pointer.
+int **ptr 
+
+ptr ** ptr...
+ptr manipulate .....
+...
++ variable-int a 
++ data in variable-5, int a = 5; 
++ pointer that points to the address of the variable: int *ptr; ptr = a; ptr = ptr, int** ptr 
+
+
+
+Array : contigous memory 
+
+int a[5]= { 0,1,2,3,4};linear array
+
+multidimensional array
+
+int a[3][3]; a[row][column];
+
+
+
+		  column
+---------------     |
+int a[3][3] = {   0 1 2
+	row--->	0{1,2,3},
+		1{4,5,6},
+		2{7,8,9},
+	}
+
+int[0][0] = 1;
+int[0][1] = 2;
+int[1][2] = 6;
+int[2][2] = 9;
+
+compile time .....while coding
+runtime compile.....while user is inputting
+
+
+int main()
+{
+	int a[2][3];
+	int i,j; 
+	for (i = 0; i < 2; i++)
+		{
+			for(j = 0; j < 3; j++)
+				{
+					scanf("%d", &a[i][j]); 
+}
+}
+
+for (i = 0; i < 2; i++)
+                {
+                        for(j = 0; j < 3; j++)
+                                {                                                       printf("%d\t", a[i][j]);
+}
+printf("\n");
+}
+
+return(0);
+}
