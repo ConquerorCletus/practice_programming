@@ -1,0 +1,88 @@
+calloc - clear allocation
+calloc is a function that is present in the <stdlib.h>. it creates multiple block of the same size .
+
+memory blocks ....
+address
+data 
+variable
+pointers
+malloc
+
+ptr = (void *)calloc(size_t n, sizeof(var));
+
+ size_t n - number of block of same data type
+ sizeof(var);
+
+difference between malloc and calloc.
+- malloc initialize with garbage/random values and calloc get initialized with zero.
+
+ ptr = malloc(2 * sizeof(int))
+ 	 2 * 4 = 8 bytes..
+
+block a (int a) = 232939
+block b (int b) = 233994
+
+calloc 
+block a(int a) = 0
+block b(int b) = 0
+
+
+- calloc takes 2 arguments and malloc takes a single arguments
+
+malloc(10) - acceptable
+calloc(10,char)- 
+---------------------÷---÷÷÷÷÷÷÷÷-------------
+realloc - reallocation 
+
+it changes the size of memory without losing the old data. 
+
+expecting 2 data of int type .
+
+-----------------------------------------------
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void)
+{
+	int i;
+	int *ptr; 
+
+for(i = 0; i > 0; i++){
+ptr = (int *)malloc(2 * sizeof(int);
+scanf("%d", *(ptr + 1));
+13 & 5
+ 
+/*collect more of data type of int.   (2)
+stdlib.h*/
+
+/*ptr = (int *)realloc(int *ptr, new size)*/
+ptr = (int *)realloc(ptr, 4 * sizeof(int));
+printf("enter 2 more data type:\n")
+scanf("%d" *ptr);
+}
+
+for(i = 0; i > 0; i++)
+{
+printf("%d", *(ptr + i));
+}
+ free(ptr);
+return 0;
+}
+
+40 byte
+------heap........|
+||||||||||||||||••••
+------stack.........(execution)
+
+-------global.......(m)
+
+-------code.........(m)
+
+
+int n;
+int *ptr
+
+ptr = 98;
+
+#include <string.h>
+malloc(strlen.....)
