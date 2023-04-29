@@ -10,7 +10,7 @@ _________________________WELCOME TO LUCKY NUMBER________________________________
 (3)THE PROGRAM TERMINATES WHEN YOU WIN
 
 
-____________ARE YOU LUCKY? THE GAME STARTS NOW___________''')
+_____________________ARE YOU LUCKY? THE GAME STARTS NOW_______________________________''')
 luckyNumber = 3
 trial_count = 0
 trial_limit = 3
@@ -23,4 +23,4 @@ while trial_count < trial_limit:
         break
 
     else:
-        print("YOU ARE NOT LUCKY TODAY TRY AGAIN!!!!")
+        print("YOU ARE NOT LUCKY TODAY, TRY AGAIN!!!!")
