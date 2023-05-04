@@ -1,3 +1,4 @@
+import random
 print('''
 
 _________________________WELCOME TO LUCKY NUMBER______________________________________
@@ -11,7 +12,7 @@ _________________________WELCOME TO LUCKY NUMBER________________________________
 
 
 _____________________ARE YOU LUCKY? THE GAME STARTS NOW_______________________________''')
-luckyNumber = 3
+luckyNumber = random.randint(1, 10)
 trial_count = 0
 trial_limit = 3
 while trial_count < trial_limit:
@@ -24,3 +25,5 @@ while trial_count < trial_limit:
 
     else:
         print("YOU ARE NOT LUCKY TODAY, TRY AGAIN!!!!")
+
+print("The lucky Number was: {}".format(luckyNumber))
