@@ -1,7 +1,5 @@
-def islower(c):
-    if ord(c) >= 97 and ord(c) <= 122:
-        return True
-    else:
-        return False
-    
+from pathlib import Path
 
+path = Path()
+for file in path.glob('*'): 
+    print(file)

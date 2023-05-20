@@ -1,2 +1,3 @@
 class Person:
-    def talk(self)
+    def talk(self):
+        

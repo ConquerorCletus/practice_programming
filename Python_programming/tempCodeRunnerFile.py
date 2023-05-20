@@ -1,1 +1,3 @@
-credit_status = int(credit_status)
+ # choice = input("Perform another calculation? (y/n): ")
+    # if choice == "n":
+    #     break
