@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-This module contains the console for AirBnB. just added
+This module contains the console for AirBnB.
 
 '''
 import cmd
