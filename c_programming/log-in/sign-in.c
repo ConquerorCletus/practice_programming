@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * main - Get user signed in.
  * Return:0
@@ -24,21 +25,17 @@ int main()
 	fgets(passphrase, sizeof(passphrase),stdin);
 	printf("Enter your passphrase again(1):\n");
 	fgets(pass, sizeof(pass),stdin);
-
-
-/*To make sure pass phrase are the same.*/          for (a = 0; passphrase[a] != '\0' && pass[a] != '\0'; a++) 
-{                                                       if (passphrase[a] == pass[a])                            {                                                      printf("Sign-in successful!!\n");                              break;                                  } 
-	else if (passphrase[a] != pass[a])
-	{                                       
-	printf("Wrong passphrase!!!\n");
-	break;
-	}
-	else if (name[a] == '\0')/* || pass[a] =='\0' || userName == '\0' || name == '\0')*/
-	{
+	
+	/*To make sure pass phrase are the same.*/
+	if (strcmp(passphrase, pass) == 0)
+		printf("Sign-in successful!!\n"); 
+	else if (strcmp(passphrase, pass) != 0)
+		printf("Wrong passphrase!!!\n");
+	
+	
+	if (name == '\0' || userName == '\0')
 		printf("Empty field noticed!!!\n");
-	}
-
-}
+	
 
 	return (0);
 }
